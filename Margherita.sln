@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Margherita", "Margherita\Margherita.csproj", "{70E85F3C-8C60-46D9-A0AF-11762C7E5513}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Margherita.Test", "Margherita.Test\Margherita.Test.csproj", "{0238E16C-66D9-4F22-BCF8-95164CEEBFDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70E85F3C-8C60-46D9-A0AF-11762C7E5513}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70E85F3C-8C60-46D9-A0AF-11762C7E5513}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70E85F3C-8C60-46D9-A0AF-11762C7E5513}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70E85F3C-8C60-46D9-A0AF-11762C7E5513}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0238E16C-66D9-4F22-BCF8-95164CEEBFDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0238E16C-66D9-4F22-BCF8-95164CEEBFDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0238E16C-66D9-4F22-BCF8-95164CEEBFDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0238E16C-66D9-4F22-BCF8-95164CEEBFDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC973558-96C5-42D5-9B71-EF5E24C2B68B}
+	EndGlobalSection
+EndGlobal
