@@ -14,7 +14,7 @@ namespace Margherita.Test
         {
             if (v == "Mama Margherita")
             {
-                return "Mama Margherita, 14\" Pizza with Special Mama source, Sucuk, Pitze, Käse, Special Cheese is only $10";
+                return new Pizza(); // "Mama Margherita, 14\" Pizza with Special Mama source, Sucuk, Pitze, Käse, Special Cheese is only $10";
             }
             else
             { 
