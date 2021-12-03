@@ -24,7 +24,8 @@ namespace Margherita.Test
         {
             return new Pizza()
             { 
-                Name = v
+                Name = v,
+                Price = 10
             }; 
         }
     }
