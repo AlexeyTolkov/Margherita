@@ -27,5 +27,13 @@ namespace Margherita.Test
             string actual = Pizza.CreateByName("Mama Margherita").Name;
             Assert.AreEqual(expected, actual);
         }
+
+        [Test]
+        public void CheckMamaSpecialPizzaName_Should_Be_MamaSpecial()
+        {
+            string expected = "Mama Special";
+            string actual = Pizza.CreateByName("Mama Special").Name;
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
