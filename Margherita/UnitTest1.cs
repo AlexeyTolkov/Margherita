@@ -20,46 +20,17 @@ namespace Margherita.Test
             Assert.AreEqual(expected, actual);
         }
 
-        [Test]
-        public void CheckMamaMargheritaPizzaName_Should_Be_MamaMargherita()
-        {
-            string expected = "Mama Margherita";
-            string actual = Pizza.CreateByName("Mama Margherita").Name;
-            Assert.AreEqual(expected, actual);
-        }
-
-        [Test]
-        public void CheckMamaSpecialPizzaName_Should_Be_MamaSpecial()
-        {
-            string expected = "Mama Special";
-            string actual = Pizza.CreateByName("Mama Special").Name;
-            Assert.AreEqual(expected, actual);
-        }
-
-        [Test]
-        public void CheckMamaMargheritaPizzaPrice_Should_Be_10()
-        {
-            decimal expected = 10;
-            decimal actual = Pizza.CreateByName("Mama Margherita").Price;
-            Assert.AreEqual(expected, actual);
-        }
-
-        [Test]
-        public void CheckMamaSpecialPizzaPrice_Should_Be_15()
-        {
-            decimal expected = 15;
-            decimal actual = Pizza.CreateByName("Mama Special").Price;
-            Assert.AreEqual(expected, actual);
-        }
-
         [TestCase("Mama Margherita", 10)]
         [TestCase("Mama Special", 15)]
         public void CheckPizzaNameAndPrice(string name, decimal price)
         {
-			var expectedPrice = price;
-			double actualPrice = 0;
-			double actualName = 0;
+            var pizza = Pizza.CreateByName(name);
+
 			var expectedName = name;
+			var expectedPrice = price;
+
+			var actualPrice = pizza.Price;
+			var actualName = pizza.Name;
             Assert.AreEqual(expectedName, actualName);
 			Assert.AreEqual(expectedPrice, actualPrice);
         }

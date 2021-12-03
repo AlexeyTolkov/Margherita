@@ -1,2 +1,3 @@
 - change argument name in CreateByName method from "v" to "name"
 - write new unittest for checking Mama Margherita Size
+- CheckPizzaNameAndPrice object comparison might be good idea
