@@ -31,14 +31,13 @@ namespace Margherita.Test
             if (v == "Mama Margherita")
             {
                 pizza.Price = 10;
-                return pizza;
             }
-            return new Pizza()
+            else
             {
-                Name = v,
-                Price = 15
-            };
+                pizza.Price = 15;
+            }
 
+            return pizza;
         }
     }
 }

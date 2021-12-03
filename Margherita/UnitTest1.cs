@@ -51,5 +51,12 @@ namespace Margherita.Test
             decimal actual = Pizza.CreateByName("Mama Special").Price;
             Assert.AreEqual(expected, actual);
         }
+
+        [TestCase("Mama Margherita", 10)
+        [TestCase("Mama Special", 15)
+        public void CheckPizzaNameAndPrice()
+        { 
+
+        }
     }
 }
