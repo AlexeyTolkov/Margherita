@@ -22,11 +22,23 @@ namespace Margherita.Test
 
         public static Pizza CreateByName(string v)
         {
+            Pizza pizza = new Pizza
+            {
+                Name = v
+            };
+
+
+            if (v == "Mama Margherita")
+            {
+                pizza.Price = 10;
+                return pizza;
+            }
             return new Pizza()
-            { 
+            {
                 Name = v,
-                Price = 10
-            }; 
+                Price = 15
+            };
+
         }
     }
 }

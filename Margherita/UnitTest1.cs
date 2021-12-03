@@ -43,5 +43,13 @@ namespace Margherita.Test
             decimal actual = Pizza.CreateByName("Mama Margherita").Price;
             Assert.AreEqual(expected, actual);
         }
+
+        [Test]
+        public void CheckMamaSpecialPizzaPrice_Should_Be_15()
+        {
+            decimal expected = 15;
+            decimal actual = Pizza.CreateByName("Mama Special").Price;
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
