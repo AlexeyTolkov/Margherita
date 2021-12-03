@@ -52,11 +52,16 @@ namespace Margherita.Test
             Assert.AreEqual(expected, actual);
         }
 
-        [TestCase("Mama Margherita", 10)
-        [TestCase("Mama Special", 15)
-        public void CheckPizzaNameAndPrice()
-        { 
-
+        [TestCase("Mama Margherita", 10)]
+        [TestCase("Mama Special", 15)]
+        public void CheckPizzaNameAndPrice(string name, decimal price)
+        {
+			var expectedPrice = price;
+			double actualPrice = 0;
+			double actualName = 0;
+			var expectedName = name;
+            Assert.AreEqual(expectedName, actualName);
+			Assert.AreEqual(expectedPrice, actualPrice);
         }
     }
 }
