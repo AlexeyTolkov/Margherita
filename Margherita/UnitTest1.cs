@@ -20,19 +20,31 @@ namespace Margherita.Test
             Assert.AreEqual(expected, actual);
         }
 
-        [TestCase("Mama Margherita", 10)]
-        [TestCase("Mama Special", 15)]
-        public void CheckPizzaNameAndPrice(string name, decimal price)
+        [TestCase("Mama Margherita", 10, 14)]
+        [TestCase("Mama Special", 15, 18)]
+        public void CheckPizzaNameAndPriceAndSize(string name, decimal price, int size)
         {
             var pizza = Pizza.CreateByName(name);
 
 			var expectedName = name;
 			var expectedPrice = price;
+            var expectedSize = size;
 
-			var actualPrice = pizza.Price;
+            var actualPrice = pizza.Price;
 			var actualName = pizza.Name;
+            var actualSize = pizza.Size;
+
             Assert.AreEqual(expectedName, actualName);
 			Assert.AreEqual(expectedPrice, actualPrice);
+			
+			Assert.AreEqual(expectedSize, actualSize);
         }
+
+        [Test]
+        public void CheckPizzaMamaMargheritaIngredients()
+		{
+
+		}
+           
     }
 }

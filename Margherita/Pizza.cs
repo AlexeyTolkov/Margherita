@@ -20,21 +20,23 @@ namespace Margherita.Test
             return "Mama Special, 18\" Pizza with Special Mama Double Source, Zwiebel, Knoblauch, Sucuk, Pitze, Petersilie, Special Cheese x2 is only $15";
         }
 
-        public static Pizza CreateByName(string v)
+        public static Pizza CreateByName(string name)
         {
             Pizza pizza = new Pizza
             {
-                Name = v
+                Name = name
             };
 
 
-            if (v == "Mama Margherita")
+            if (name == "Mama Margherita")
             {
                 pizza.Price = 10;
+                pizza.Size = 14;
             }
             else
             {
                 pizza.Price = 15;
+                pizza.Size = 18;
             }
 
             return pizza;
