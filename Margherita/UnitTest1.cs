@@ -64,17 +64,12 @@ namespace Margherita.Test
         }
 
         [Test]
-        public void MamaMargheritaPizzaShouldNotBeEqualToPizzaWithAnyDifferenceInProperty()
-		{
+        public void CheckMamaMargheritaHasFiveIngredientsInside()
+        {
+            var expectedCntOfIngredients = 5;
+            var actualCntOfIngredients = Pizza.CreateByName("Mama Margherita").Ingredients.Count;
 
-			object expectedPizzaDiffPrice = null;
-			object expectedPizzaDiffName = null;
-            object expectedPizzaDiffSize = null;
-            object actualPizza = null;
-
-            Assert.AreNotEqual(expectedPizzaDiffPrice, actualPizza);
-			Assert.AreNotEqual(expectedPizzaDiffName, actualPizza);
-			Assert.AreNotEqual(expectedPizzaDiffSize, actualPizza);
+            Assert.AreEqual(expectedCntOfIngredients, actualCntOfIngredients);
         }
     }
 }
