@@ -51,7 +51,16 @@ namespace Margherita.Test
             var actualPizza = Pizza.CreateByName("Mama Margherita");
 
             Assert.AreEqual(expectedPizza, actualPizza);
-           // Assert.True(expectedPizza == actualPizza);
+        }
+
+        [Test]
+        public void MamaMargheritaPizzaShouldNotBeEmptyPizza()
+        {
+            var expectedPizza = new Pizza();
+
+            var actualPizza = Pizza.CreateByName("Mama Margherita");
+
+            Assert.AreNotEqual(expectedPizza, actualPizza);
         }
     }
 }

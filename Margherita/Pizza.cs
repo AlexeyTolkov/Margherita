@@ -44,11 +44,9 @@ namespace Margherita.Test
 
         public override bool Equals(object pizza)
         {
-            pizza
+            Pizza pizzaForCompare = (Pizza)pizza;
 
-            return  this.Name == pizza.Name &&
-                    this.Price == pizza.Price &&
-                    this.Size == pizza.Size;
+            return this.Name == pizzaForCompare.Name;
         }
     }
 }
