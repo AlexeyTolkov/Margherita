@@ -71,5 +71,14 @@ namespace Margherita.Test
 
             Assert.AreEqual(expectedCntOfIngredients, actualCntOfIngredients);
         }
+
+        [Test]
+        public void CheckMamaMargheritaHasSpecialMamaSource()
+        {
+            var expectedIngredient = "Special mama source";
+            var actualIngredients = Pizza.CreateByName("Mama Margherita").Ingredients;
+
+            Assert.Contains(expectedIngredient, actualIngredients);
+        }
     }
 }
