@@ -24,7 +24,8 @@ namespace Margherita.Test
         {
             Pizza pizza = new Pizza
             {
-                Name = name
+                Name = name,
+                Ingredients = new List<string> {"", "" , "" , "" , "" }
             };
 
 
