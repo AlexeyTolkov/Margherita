@@ -62,5 +62,19 @@ namespace Margherita.Test
 
             Assert.AreNotEqual(expectedPizza, actualPizza);
         }
+
+        [Test]
+        public void MamaMargheritaPizzaShouldNotBeEqualToPizzaWithAnyDifferenceInProperty()
+		{
+
+			object expectedPizzaDiffPrice = null;
+			object expectedPizzaDiffName = null;
+            object expectedPizzaDiffSize = null;
+            object actualPizza = null;
+
+            Assert.AreNotEqual(expectedPizzaDiffPrice, actualPizza);
+			Assert.AreNotEqual(expectedPizzaDiffName, actualPizza);
+			Assert.AreNotEqual(expectedPizzaDiffSize, actualPizza);
+        }
     }
 }
