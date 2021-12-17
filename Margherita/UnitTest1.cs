@@ -80,5 +80,12 @@ namespace Margherita.Test
 
             Assert.Contains(expectedIngredient, actualIngredients);
         }
+
+        [TestCase("Special mama source")]
+        public void checkMamaMargaritaHasSpecificIngredients(string expectedIngredient)
+		{
+			var actualIngredients = null;
+            Assert.Contains(expectedIngredient, actualIngredients);
+        }
     }
 }
