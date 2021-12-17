@@ -38,7 +38,7 @@ namespace Margherita.Test
             {
                 pizza.Price = 15;
                 pizza.Size = 18;
-                pizza.Ingredients = new List<string> { "Special Mama Double Source", "", "", "", "", "", "" };
+                pizza.Ingredients = new List<string> { "Special Mama Double Source", "Zwiebel", "Knoblauch", "Sucuk", "Pitze", "Petersilie", "Special Cheese x2" };
             }
 
             return pizza;

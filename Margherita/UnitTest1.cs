@@ -63,8 +63,6 @@ namespace Margherita.Test
             Assert.AreNotEqual(expectedPizza, actualPizza);
         }
 
-        //Special Mama Double Source, Zwiebel, Knoblauch, Sucuk, Pitze, Petersilie, Special Cheese x2
-
         [TestCase("Mama Margherita", 5)]
         [TestCase("Mama Special", 7)]
         public void CheckPizzaHasCorrectCountOfIngredients(string pizzaName, int expectedIngredientsCount)
@@ -80,9 +78,16 @@ namespace Margherita.Test
         [TestCase("Mama Margherita", "Käse")]
         [TestCase("Mama Margherita", "Special Cheese")]
         [TestCase("Mama Special", "Special Mama Double Source")]
+        [TestCase("Mama Special", "Zwiebel")]
+        [TestCase("Mama Special", "Knoblauch")]
+        [TestCase("Mama Special", "Sucuk")]
+        [TestCase("Mama Special", "Pitze")]
+        [TestCase("Mama Special", "Petersilie")]
+        [TestCase("Mama Special", "Special Cheese x2")]
         public void checkPizzasHaveTheCorrectTypeOfIngredients(string pizzaName, string expectedIngredient)
 		{
 			var actualIngredients = Pizza.CreateByName(pizzaName).Ingredients;
+
 			Assert.Contains(expectedIngredient, actualIngredients);
         }
 			
