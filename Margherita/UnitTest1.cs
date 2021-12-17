@@ -90,6 +90,16 @@ namespace Margherita.Test
 
 			Assert.Contains(expectedIngredient, actualIngredients);
         }
-			
+		
+        [Test]
+        public void checkMamasReceiptHasFourSteps()
+		{	
+			var expectedCountOfSteps = 4;
+            var actualCountOfSteps = new MamasReceipt().Steps.Count;
+
+            Assert.AreEqual(expectedCountOfSteps, actualCountOfSteps);
+		}
+
+        public void checkMamasReceiptSteps
     }
 }

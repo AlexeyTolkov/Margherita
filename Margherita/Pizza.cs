@@ -44,11 +44,23 @@ namespace Margherita.Test
             return pizza;
         }
 
+
+
         public override bool Equals(object pizza)
         {
             Pizza pizzaForCompare = (Pizza)pizza;
 
             return this.Name == pizzaForCompare.Name;
         }
+    }
+    
+    internal class MamasReceipt
+	{
+        public List<string> Steps { get; set; }
+
+		public MamasReceipt()
+		{
+            Steps = new List<string>() { "", "", "", "" };
+		}
     }
 }
