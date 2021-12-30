@@ -100,21 +100,13 @@ namespace Margherita.Test
             Assert.AreEqual(expectedCountOfSteps, actualCountOfSteps);
         }
 
-        //'Making Dow', 'Putting Mama Source', 'Putting incredients' and finally 'Putting Special Cheese'
-        [Test]
-        public void checkMamasReceiptStep1IsMakingDow()
+        [TestCase("Making Dow", 0)]
+        [TestCase("Putting Mama Source", 1)]
+        [TestCase("Putting incredients", 2)]
+        [TestCase("Putting Special Cheese", 3)]
+        public void checkMamasReceiptSteps(string expectedStep, int stepIndex)
         {
-            var expectedStep = "Making Dow";
-            var actualStep = new MamasReceipt().Steps[0];
-
-            Assert.AreEqual(expectedStep, actualStep);
-        }
-
-        [TestCase("Making Dow", "Special Cheese x2")]
-        public void checkMamasReceiptStepIsMakingDow()
-        {
-            var expectedStep = "Putting Mama Source";
-            var actualStep = new MamasReceipt().Steps[0];
+            var actualStep = new MamasReceipt().Steps[stepIndex];
 
             Assert.AreEqual(expectedStep, actualStep);
         }

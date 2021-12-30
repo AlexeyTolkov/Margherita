@@ -60,7 +60,7 @@ namespace Margherita.Test
 
 		public MamasReceipt()
 		{
-            Steps = new List<string>() { "Making Dow", "", "", "" };
+            Steps = new List<string>() { "Making Dow", "Putting Mama Source", "Putting incredients", "Putting Special Cheese" };
 		}
     }
 }
