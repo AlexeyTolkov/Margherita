@@ -72,7 +72,7 @@ namespace Margherita.Test
             Assert.AreEqual(expectedIngredientsCount, actualCountOfIngredients);
         }
 
-        [TestCase("Mama Margherita", "Special mama source")]
+        [TestCase("Mama Margherita", "Special Mama source")]
         [TestCase("Mama Margherita", "Sucuk")]
         [TestCase("Mama Margherita", "Pitze")]
         [TestCase("Mama Margherita", "Käse")]
